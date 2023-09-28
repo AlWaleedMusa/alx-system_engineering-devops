@@ -11,3 +11,4 @@ this will be a file to explain what each script do
 8-James-Bond: this script sets the permission to a file.
 9-John-Doe: this will sets the mode of the file hello to a specific permission battern.
 10-mirror-permissions: this script sets the mode of the file hello the same as olleh’s mode.
+11-directories-permissions: this script adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users.
