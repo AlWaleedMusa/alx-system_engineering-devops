@@ -6,3 +6,5 @@ this is a read me discriptions of all the command will be included in this task:
 3-listfiles this script Display current directory contents in a long format.
 4-listmorefiles: this script Display current directory contents, including hidden files (starting with .)
 5-listfilesdigitonly: this script Display current directory contents.
+6-firstdirectory: this script creates a directory named my-first-directory in the /tmp/ directory.
+7-movethatfile: this script Move the file betty from /tmp/ to /tmp/my-first-directory.
