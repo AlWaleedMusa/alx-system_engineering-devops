@@ -1,2 +1,3 @@
 #!/bin/bash
-grip -c -i "bin" /etc/passwd 
+grip -c "bin" /etc/passwd | wc -l 
+
