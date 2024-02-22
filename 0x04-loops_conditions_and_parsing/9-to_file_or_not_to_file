@@ -1,7 +1,7 @@
 #!/user/bin/env bash
 # ceck is file exist or not and if its empty or not
 
-file="school"
+file=school
 
 if [ -e "$file" ]; then
 	echo "school file exists"
