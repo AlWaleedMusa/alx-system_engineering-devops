@@ -1,19 +1,16 @@
 #!/usr/bin/env bash
 # a clock 
 
-hour=1
-min=1
+hour=0
+
 while [ $hour -le 12 ]
 do
-	min=1
-	while [ $min -le 60 ]
-	do
-		if [ $min -eq 60 ]; then
-			echo "Hour: $hour"
-			hour=$(( hour+1 ))
-		else
-			echo "$min"
-		fi
-		min=$(( min+1 ))
-	done
+  echo "Hour: $hour"
+  minute=1
+  while [ $minute -le 59 ]
+  do
+    echo "$minute"
+    (( minute++ ))
+  done
+  (( hour++ ))
 done
