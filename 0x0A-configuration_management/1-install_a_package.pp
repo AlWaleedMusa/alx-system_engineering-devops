@@ -1,6 +1,5 @@
-# A manifest that install a package from pip3
-
-package {'Flask':
-  ensure   => '2.1.0',
-  provider => 'pip3'
+# install flask from 'pip3' package manager
+package {'flask':
+    ensure   => '2.1.0',
+    provider => 'pip3',
 }
