@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# variables
+server="35.153.232.142"
+private_key="~/.ssh/school"
+user="ubuntu"
+
+# Connect to the server using ssh
+ssh -i "$private_key" "$user"@"$server"
