@@ -1,3 +1,4 @@
+#!/usr/bin/pup
 # A manifest that install a package from pip3
 
 package {'flask':
