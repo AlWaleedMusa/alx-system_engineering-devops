@@ -1,14 +1,17 @@
-# puppet ssh config
+# Puppet ssh config file
 
 include stdlib
 
-file_line { 'password_authentication':
-    ensure  => present,
-    path   => 'etc/ssh/ssh_config',
-    content => '
-        Host *
-            IdentityFile ~/.ssh/school
-            PasswordAuthentication no
-    ',
-    replace => true,
+file_line {'password authenticate':
+  ensure  => present,
+  path    => '/etc/ssh/ssh_config',
+  line    => 'PasswordAuthentication no',
+  replace => true,
+}
+
+file_line { 'identity file':
+  ensure  => present,
+  path    => '/etc/ssh/ssh_config',
+  line    => 'IdentityFile ~/.ssh/school',
+  replace => true,
 }
