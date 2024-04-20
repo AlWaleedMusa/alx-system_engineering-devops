@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# create an ssh key pair with a passphrase
 
 # variables
 key_name="school"

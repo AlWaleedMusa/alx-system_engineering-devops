@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# connect to a server using ssh
 
 # variables
 server="35.153.232.142"
