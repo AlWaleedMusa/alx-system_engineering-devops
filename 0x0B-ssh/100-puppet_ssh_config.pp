@@ -1,5 +1,5 @@
 # puppet ssh config
-y
+
 include stdlib
 
 file_line { 'password_authentication':
