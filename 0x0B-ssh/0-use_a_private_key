@@ -2,7 +2,7 @@
 # connect to a server using ssh
 
 # variables
-server="35.153.232.142"
+server=35.153.232.142
 private_key="~/.ssh/school"
 user="ubuntu"
 
