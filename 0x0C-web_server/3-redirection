@@ -5,8 +5,13 @@
 sudo apt-get update
 sudo apt-get install -y nginx
 
-# Configure Nginx to redirect /redirect_me to another page with 301 status
-sudo sed -i '/listen 80 default_server;/a \\n\tlocation /redirect_me {\n\t\treturn 301 https://www.google.com;\n\t}' /etc/nginx/sites-available/default
+# Creating an index.html page
+sudo touch /var/www/html/index.html
+echo "Hello World!" > /var/www/html/index.html
+
+# Performing a 301 Redirection
+string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/googel.com\/besthor permanent;"
+sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
 
 # Restart Nginx
 sudo service nginx restart
