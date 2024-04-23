@@ -1,0 +1,21 @@
+#!/usr/bin/env/ bash
+# this script is used to install nginx on ubuntu
+
+# update the package list and install nginx
+sudo apt-get update
+sudo apt-get install -y nginx
+
+# allow nginx through the firewall
+sudo ufw allow 'Nginx HTTP'
+
+# start and enable nginx
+sudo touch /var/www/html/index.html
+echo "Hello World!" > /var/www/html/index.html
+
+# test the nginx configuration
+sudo nginx -t
+
+# start the nginx service
+sudo service nginx start
+
+echo "Nginx is installed and running"
