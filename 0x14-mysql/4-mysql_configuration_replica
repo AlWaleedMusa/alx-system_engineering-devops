@@ -43,11 +43,16 @@ validate_password_policy = LOW
 # server id
 server-id = 2
 
-# setting the base name and location of bunary log file
-log_bin = /var/log/mysql/mysql-bin.log
+relay-log = /var/log/mysql/mysql-relay-bin
 
-# name of database to replicate
+# setting the base name and location of binary log files
+log_bin = /var/log/mysql/mysql-bin
+
+binlog_format = ROW
+
+# database to replicate
 binlog_do_db = tyrell_corp
 
-# setting location of the replica's relay log file
-relay-log = /var/log/mysql/mysql-relay-bin.log
+# setting location of the replica's relay log files
+relay_log = /var/log/mysql/mysql-relay-bin
+
