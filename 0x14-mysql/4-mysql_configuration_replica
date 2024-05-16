@@ -46,13 +46,11 @@ server-id = 2
 relay-log = /var/log/mysql/mysql-relay-bin
 
 # setting the base name and location of binary log files
-log_bin = /var/log/mysql/mysql-bin
-
-binlog_format = ROW
+log_bin = /var/log/mysql/mysql-bin.log
 
 # database to replicate
 binlog_do_db = tyrell_corp
 
 # setting location of the replica's relay log files
-relay_log = /var/log/mysql/mysql-relay-bin
+relay_log = /var/log/mysql/mysql-relay-bin.log
 
