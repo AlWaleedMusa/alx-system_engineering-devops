@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""using task 0 extend your Python script to export data in the CSV format"""
+"""using task 0 extend your Python script to
+export data in the CSV format"""
 
 import requests
 import sys
@@ -20,4 +21,14 @@ if __name__ == "__main__":
     completed = [t.get("title") for t in todos if t.get("completed")]
     with open("{}.csv".format(sys.argv[1]), "w") as csv_file:
         writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
-        [writer.writerow([sys.argv[1], user.get("username"), t.get("completed"), t.get("title")]) for t in todos]
+        [
+            writer.writerow(
+                [
+                    sys.argv[1],
+                    user.get("username"),
+                    t.get("completed"),
+                    t.get("title")
+                ]
+            )
+            for t in todos
+        ]
