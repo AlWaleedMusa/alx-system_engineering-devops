@@ -1,3 +1,5 @@
+# A manifest the debug an apache issue
+
 # Ensure that the file '/etc/apache2/sites-available/your_site.conf' is present
 file { '/etc/apache2/sites-available/your_site.conf':
     ensure  => present,
